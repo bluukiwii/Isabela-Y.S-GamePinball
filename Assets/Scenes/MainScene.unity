@@ -276,7 +276,7 @@ Transform:
   m_GameObject: {fileID: 16129605}
   serializedVersion: 2
   m_LocalRotation: {x: 0.00000019475557, y: 0.974369, z: 0.22495022, w: -0.0015507948}
-  m_LocalPosition: {x: -4.96, y: 2.3, z: -10.6}
+  m_LocalPosition: {x: -4.96, y: 2.19, z: -10.6}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -501,7 +501,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7888624436041725794, guid: dabb0e47eddf3c9469154ff588dbcfdb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.32
+      value: 0.21
       objectReference: {fileID: 0}
     - target: {fileID: -7888624436041725794, guid: dabb0e47eddf3c9469154ff588dbcfdb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -747,6 +747,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.23
       objectReference: {fileID: 0}
+    - target: {fileID: -3929222124848807800, guid: dabb0e47eddf3c9469154ff588dbcfdb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 68f6bda51ef062241942f066d4228132, type: 2}
     - target: {fileID: -3694741490782949282, guid: dabb0e47eddf3c9469154ff588dbcfdb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.026
@@ -759,6 +763,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.005
       objectReference: {fileID: 0}
+    - target: {fileID: -3519480263024985092, guid: dabb0e47eddf3c9469154ff588dbcfdb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 20faa8a4cadb57449a3cddb51ec74e4a, type: 2}
     - target: {fileID: -3137340631152133977, guid: dabb0e47eddf3c9469154ff588dbcfdb, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -839,6 +847,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pinball Board
       objectReference: {fileID: 0}
+    - target: {fileID: 1587332970428038938, guid: dabb0e47eddf3c9469154ff588dbcfdb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 68f6bda51ef062241942f066d4228132, type: 2}
     - target: {fileID: 1712716403590351423, guid: dabb0e47eddf3c9469154ff588dbcfdb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.15
@@ -1090,6 +1102,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -3976989038117407772, guid: dabb0e47eddf3c9469154ff588dbcfdb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 286544512}
+    - targetCorrespondingSourceObject: {fileID: -3976989038117407772, guid: dabb0e47eddf3c9469154ff588dbcfdb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 286544513}
     - targetCorrespondingSourceObject: {fileID: -5922887158546650856, guid: dabb0e47eddf3c9469154ff588dbcfdb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1163154506}
@@ -1139,6 +1154,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bola: {fileID: 16129607}
   bounceMultiplier: 2.5
+--- !u!114 &286544513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286544504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39a510f14081d564b9e390d89db100f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bola: {fileID: 16129607}
+  input: 32
+  maxTimeHold: 2
+  maxForce: 12500
 --- !u!1 &297146106 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3667747610276855917, guid: dabb0e47eddf3c9469154ff588dbcfdb, type: 3}
