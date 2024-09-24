@@ -7,7 +7,7 @@ public class NewBehaviourScript : MonoBehaviour
     public KeyCode input;
     public float springPower = 1000f;
     public float minRotation = 5f;
-    public float maxRotation = 60f;
+    public float maxRotation = 75f;
 
     private void Start()
     {
