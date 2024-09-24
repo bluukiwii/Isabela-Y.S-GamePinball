@@ -8,6 +8,9 @@ public class Bumper : MonoBehaviour
     public float multiplier;
     public Color color;
 
+    public AudioManager audiomanager;
+    public VFXManager vfxmanager;
+
     private Renderer renderer;
     private Animator animator;
 
@@ -15,6 +18,8 @@ public class Bumper : MonoBehaviour
     {
        renderer = GetComponent<Renderer>();
        animator = GetComponent<Animator>();
+
+       renderer.material.color = color;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -26,6 +31,12 @@ public class Bumper : MonoBehaviour
 
             //animasi
             animator.SetTrigger("hit");
+
+            //playsfx
+            audiomanager.PlaySFX(collision.transform.position);
+
+            //playvfx
+            vfxmanager.PlayVFX(collision.transform.position);
         }
     }
 }
