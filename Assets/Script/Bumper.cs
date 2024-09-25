@@ -7,9 +7,11 @@ public class Bumper : MonoBehaviour
     public Collider bola;
     public float multiplier;
     public Color color;
+    public float score;
 
-    public AudioManager audiomanager;
-    public VFXManager vfxmanager;
+    public AudioManager audioManager;
+    public VFXManager vfxManager;
+    public ScoreManager scoreManager;
 
     private Renderer renderer;
     private Animator animator;
@@ -33,10 +35,13 @@ public class Bumper : MonoBehaviour
             animator.SetTrigger("hit");
 
             //playsfx
-            audiomanager.PlaySFX(collision.transform.position);
+            audioManager.PlaySFX(collision.transform.position);
 
             //playvfx
-            vfxmanager.PlayVFX(collision.transform.position);
+            vfxManager.PlayVFX(collision.transform.position);
+            
+            //score add
+            scoreManager.AddScore(10);
         }
     }
 }
